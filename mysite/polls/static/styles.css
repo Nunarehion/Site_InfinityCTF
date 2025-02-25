@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ----------------------------------------------------------------*/
+
+@font-face {
+  font-family: "epilepsy-sans";
+  src: url("fonts/epilepsy-sans1.ttf") format("truetype");
+}
+
+* {
+  /* outline: 1px solid gray; */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "epilepsy-sans", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-color);
+}
+
+:root {
+  --main-color: #404040;
+  --main-shadow: #d4d4d4;
+  --second-color: #fafafa;
+}
+section.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 2rem;
+  background: var(--second-color);
+  font-style: italic;
+}
+
+section.home h1 {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  background: var(--main-color);
+  color: var(--second-color);
+  padding: 2rem;
+  /* border-radius: 3rem; */
+}
+section.home nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+section.home nav ul li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25em;
+  outline: 1px dotted;
+}
+section.home nav ul li:hover {
+  background: var(--main-shadow);
+}
+section.home nav ul .nav__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section.home .decor {
+  position: absolute;
+
+  padding: 1rem;
+  background: var(--main-color);
+}
+
+section.home .decor:nth-child(3) {
+  top: 0;
+  left: 0;
+}
+
+section.home .decor:nth-child(4) {
+  top: 0;
+  right: 0;
+}
+
+section.home .decor:nth-child(5) {
+  bottom: 0;
+  left: 0;
+}
+
+section.home .decor:nth-child(6) {
+  bottom: 0;
+  right: 0;
+}

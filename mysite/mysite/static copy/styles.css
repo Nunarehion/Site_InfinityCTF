@@ -50,24 +50,12 @@ img {
   font-family: "epilepsy-sans";
   src: url("fonts/epilepsy-sans1.ttf") format("truetype");
 }
-/* -- styles ( GLOBALS ) -- */
+
 * {
   /* outline: 1px solid gray; */
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 4em;
-  font-weight: bold;
-}
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-}
-h3 {
-  font-size: 1.25em;
-  font-weight: bold;
-}
 html {
   font-family: "epilepsy-sans", serif;
   font-weight: 500;
@@ -80,13 +68,6 @@ html {
   --main-shadow: #d4d4d4;
   --second-color: #fafafa;
 }
-
-section {
-  padding: 2rem;
-  background: var(--second-color);
-}
-
-/* -- styles (section) { home } -- */
 section.home {
   position: relative;
   display: flex;
@@ -104,6 +85,7 @@ section.home {
 
 section.home h1 {
   text-align: center;
+  font-size: 4em;
   font-weight: bold;
   background: var(--main-color);
   color: var(--second-color);
@@ -155,65 +137,4 @@ section.home .decor:nth-child(5) {
 section.home .decor:nth-child(6) {
   bottom: 0;
   right: 0;
-}
-
-/* -- styles (section) { news } -- */
-
-section.news {
-  /* { news } LOCAL */
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
-
-section.news h2 {
-  /* { newS } TITLE */
-}
-
-section.news nav {
-  /* { news } nav */
-  position: fixed;
-  display: flex;
-  padding: 0.5rem;
-  min-width: 2rem;
-  right: 0;
-  top: 0;
-  margin: 0.5rem;
-  border: 1px solid var(--main-shadow);
-  background: white;
-}
-
-section.news ul {
-  /* { news-cards } list */
-  min-width: 365px;
-  max-width: 485px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-section.news h3 {
-  /* { news-card } title */
-}
-
-section.news li {
-  /* { news-card } body */
-  border: 1px solid var(--main-shadow);
-  padding: 1rem;
-  background: white;
-}
-
-section.news p {
-  /* { news-card } content */
-  font-weight: lighter;
-}
-
-section.news p em {
-  /* { news-card } info */
-  color: var(--main-shadow);
-  font-size: 0.8em;
-  margin-top: 1em;
 }

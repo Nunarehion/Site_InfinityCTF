@@ -10,12 +10,15 @@
 </head>
 
 <body>
-    <section class="home">
-        <h1>Список новостей</h1>
+    <section class="news">
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+        </nav>
+        <h2>Список новостей</h2>
         <ul>
             {% for article in articles %}
             <li>
-                <h2>{{ article.title }}</h2>
+                <h3>{{ article.title }}</h3>
                 <p>{{ article.content }}</p>
                 <p><em>Автор: {{ article.author }} | Дата: {{ article.published_date }}</em></p>
             </li>

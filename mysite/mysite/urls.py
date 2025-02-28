@@ -25,5 +25,6 @@ urlpatterns = [
     path('news/', views_news.news, name='news'),
     path('news/<int:id>/', views_news.news, name='news'),
     path('admin/', admin.site.urls),
+    path('test/', views_home.test, name='test')
 
 ]

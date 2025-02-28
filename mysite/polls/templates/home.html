@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <section class="home">
+        <h1>>>>Infinity_CTF</h1>
+        <nav>
+            <ul>
+                <div class="nav__panel nav__panel-top">
+                    <li><a href="{% url 'news' %}">новостиЧ</a></li>
+                    <li><a href="{% url 'home' %}">рейтинг</a></li>
+                </div>
+                <div class="nav__panel nav__panel-bottom">
+                    <li><a href="{% url 'home' %}">календарь</a></li>
+                    <li><a href="{% url 'home' %}">поиск команды</a></li>
+                    <li><a href="{% url 'home' %}">зал славы</a> </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+        <div class="decor"></div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block section %}
+
+<section class="article">
+    <div>
+        <a class="button" href="{% url 'news' %}">Назад к новостям</a>
+        <a class="button" href="{% url 'home' %}">Главная</a>
+    </div>
+
+    <p><strong>Автор:</strong> {{ article.author }}</p>
+    <p><strong>Дата публикации:</strong> {{ article.published_date|date:"d.m.Y H:i" }}</p>
+    <div>
+        <header>
+            <h2>{{ article.title }}</h2>
+        </header>
+        <p>{{ article.content }}</p>
+    </div>
+
+</section>
+{% endblock %}

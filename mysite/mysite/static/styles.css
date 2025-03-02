@@ -81,6 +81,31 @@ html {
   --second-color: #fafafa;
 }
 
+/* -- also styles -- */
+.button {
+  background: var(--main-color);
+  color: var(--second-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25em;
+  outline: 1px dotted;
+}
+
+#logout-form {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  width: mac-content;
+  z-index: 999;
+}
+
+#logout-form button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: red;
+}
+
 section {
   padding: 2rem;
   background: var(--second-color);

@@ -28,6 +28,6 @@ urlpatterns = [
     path('news/<int:article_id>/', views_news.article_detail, name='article_detail'),
     path('admin/', admin.site.urls),
     path('', include('users.urls')),
-    # path('register/', views_users.register, name='register'),
-    # path('login/', views_users.login_view, name='login'),
+    path('', include('rating.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

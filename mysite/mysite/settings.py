@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     # <-- MyApps --> #
     'home',
     'news',
-    'users'
+    'users',
+    'rating',
+    'teams',
 ]
 
 MIDDLEWARE = [

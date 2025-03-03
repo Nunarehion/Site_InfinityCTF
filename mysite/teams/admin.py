@@ -6,11 +6,12 @@ from django import forms
 class TeamAdminForm(forms.ModelForm):
     class Meta:
         model = Team
-        fields = '__all__'
+        fields = ['name', 'rating', 'strength', 'members']
 
 
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ('name', 'rating', )
+    form = TeamAdminForm
+    list_display = ('name', 'rating', 'strength')
     search_fields = ('name',)
 
 
